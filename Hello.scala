@@ -1,8 +1,9 @@
-import java.io
+import scala.io._
 
 object Hello {
     def main(args: Array[String]): Unit = {
-        val (helloText, worldText) = ("Hello", "World")
-        Console.println(helloText + " " + worldText)
+        val helloText = "Hello"
+        var word = StdIn.readLine()
+        Console.println(helloText + " " + word)
     }
 }
