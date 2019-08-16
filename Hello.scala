@@ -2,8 +2,7 @@ import scala.io._
 
 object Hello {
     def main(args: Array[String]): Unit = {
-        val helloText = "Hello"
-        var word = StdIn.readLine()
-        Console.println(helloText + " " + word)
+        var helloWorldText = ("Hello", "World")
+        Console.println(helloWorldText._1 + " " + helloWorldText._2)
     }
 }
